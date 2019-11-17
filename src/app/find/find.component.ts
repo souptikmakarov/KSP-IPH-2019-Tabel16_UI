@@ -80,7 +80,7 @@ export class FindComponent implements OnInit {
             p1.matchPercentage = Number.parseFloat(best_mat.pc) < 0 ? 0 : Number.parseFloat(best_mat.pc);
             p1.fromDatabase = "Personal";
             p1.matchType = "Best Match";
-            p1.database_type = "database_personal";
+            p1.database_type = "database_personal list-group-item";
             p1.crimeNo = "NA";
             p1.address = "Bengaluru";
             bestMatches.push(p1);
@@ -96,7 +96,7 @@ export class FindComponent implements OnInit {
               p1.matchPercentage = Number.parseFloat(alt_mat.pc) < 0 ? 0 : Number.parseFloat(alt_mat.pc);
               p1.fromDatabase = "Personal";
               p1.matchType = "Alternate Match";
-              p1.database_type = "database_personal";
+              p1.database_type = "database_personal list-group-item";
               p1.crimeNo = "NA";
               p1.address = "Bengaluru";
               alternateMatches.push(p1);
@@ -113,7 +113,7 @@ export class FindComponent implements OnInit {
             p1.imageUrl = this.getFilePath(best_mat.name, "arrested");
             p1.matchPercentage = Number.parseFloat(best_mat.pc) < 0 ? 0 : Number.parseFloat(best_mat.pc);
             p1.fromDatabase = "Arrested";
-            p1.database_type = "database_arrested";
+            p1.database_type = "database_arrested list-group-item";
             p1.matchType = "Best Match";
             p1.crimeNo = "NA";
             p1.address = "Bengaluru";
@@ -129,7 +129,7 @@ export class FindComponent implements OnInit {
               p1.imageUrl = self.getFilePath(alt_mat.name, "arrested");
               p1.matchPercentage = Number.parseFloat(alt_mat.pc) < 0 ? 0 : Number.parseFloat(alt_mat.pc);
               p1.fromDatabase = "Arrested";
-              p1.database_type = "database_arrested";
+              p1.database_type = "database_arrested list-group-item";
               p1.matchType = "Alternate Match";
               p1.crimeNo = "NA";
               p1.address = "Bengaluru";
@@ -147,7 +147,7 @@ export class FindComponent implements OnInit {
             p1.imageUrl = this.getFilePath(best_mat.name, "wanted");
             p1.matchPercentage = Number.parseFloat(best_mat.pc) < 0 ? 0 : Number.parseFloat(best_mat.pc);
             p1.fromDatabase = "Wanted";
-            p1.database_type = "database_wanted";
+            p1.database_type = "database_wanted list-group-item";
             p1.matchType = "Best Match";
             p1.crimeNo = "NA";
             p1.address = "Bengaluru";
@@ -163,7 +163,7 @@ export class FindComponent implements OnInit {
               p1.imageUrl = self.getFilePath(alt_mat.name, "wanted");
               p1.matchPercentage = Number.parseFloat(alt_mat.pc) < 0 ? 0 : Number.parseFloat(alt_mat.pc);
               p1.fromDatabase = "Wanted";
-              p1.database_type = "database_wanted";
+              p1.database_type = "database_wanted list-group-item";
               p1.matchType = "Alternate Match";
               p1.crimeNo = "NA";
               p1.address = "Bengaluru";
