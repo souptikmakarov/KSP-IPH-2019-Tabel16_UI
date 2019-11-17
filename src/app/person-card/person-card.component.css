@@ -1,0 +1,23 @@
+.person_image{
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.database_personal{
+    color: whitesmoke;
+    text-shadow: 0 0 3px #fff, 0 0 20px #fff, 0 0 30px #5be600, 0 0 0px #5be602, 0 0 0px #5be602, 0 0 10px #5be603, 0 0 0px #5be603;
+}
+
+.database_wanted{
+    color: whitesmoke;
+    text-shadow: 0 0 3px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 0px #E60072, 0 0 0px #e60073, 0 0 10px #e60073, 0 0 0px #e60073;
+}
+
+.database_arrested{
+    color: whitesmoke;
+    text-shadow: 0 0 3px #fff, 0 0 20px #fff, 0 0 30px #e66a00, 0 0 0px #e66a00, 0 0 0px #e66a02, 0 0 10px #e66a02, 0 0 0px #e66a02;
+}
+
+/* # */

@@ -1,0 +1,63 @@
+<div class="special_background">
+  <div class="row" [class]="uploaderVisibility">
+    <div class="col-md-12">
+      <div class="jumbotron file-upload-container">
+        <h1 style="padding-bottom: 20px">
+          Search for Subject
+        </h1>
+        <div class="custom-file">
+          <input #file type="file" accept='image/*' (change)="preview(file.files)" class="custom-file-input"
+            id="inputFile">
+          <label class="custom-file-label" for="inputFile">Choose file</label>
+        </div>
+        <p>Upload JPEG snap of the subject.</p>
+        <div class="row">
+          <div class="col-md-8">
+            <button [disabled]="fileToBeUploaded==null || fileToBeUploaded==undefined" type="button" class="btn btn-primary"(click) = "runSearch()">Search</button>
+          </div>
+          <div class="col-md-2">
+            <img [src]="imgURL" height="50" width="50" *ngIf="imgURL">
+          </div>
+          <div class="col-md-2">
+            {{fileName}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <button type="button" class="btn btn-primary"(click) = "toggleUploaderVisibility()">Toggle</button> -->
+  
+  <div class="row display_panel" *ngIf="resultVisible">
+    <div class="col-md-6 uploaded_data">
+      <!-- <div class="matrix-card">
+          <img src="assets/thor_upload.jpg" class="matrix-card-img" alt="My Uploaded Image">
+      </div> -->
+      <app-unknown-person-card [toSearch]='uploaded_person'></app-unknown-person-card>
+        <!-- <div class="card text-white bg-dark image_data">
+            <img src="assets/thor_upload.jpg" class="card-img-top" alt="My Uploaded Image">
+            <div class="card-body">
+                <h5 class="card-title">Person of interest</h5>
+                <p class="card-text">Matching...80%</p>
+            </div>
+        </div> -->
+    </div>
+    <div class="col-md-6 db_data">
+      <img *ngIf="!isSearchComplete" src="assets/throbber_12.gif" class="loader_gif">
+      <app-person-card *ngIf="isSearchComplete" [person]='db_person'></app-person-card>
+      <!-- <div class="card text-white bg-dark image_data">
+        <img src="assets/thor_db.jpg" class="card-img-top" alt="My Database Image">
+        <div class="card-body">
+            <h5 class="card-title">Thor Odinson</h5>
+            <div class="card-text">
+                <ul>
+                    <li>Height: 6'3''</li>
+                    <li>Weight: 90Kg</li>
+                    <li>Location: Asgard</li>
+                </ul>
+            </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

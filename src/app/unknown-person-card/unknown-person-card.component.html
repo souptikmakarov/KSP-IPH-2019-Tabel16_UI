@@ -1,0 +1,15 @@
+<div class="card mb-3">
+  <h3 class="card-header glow-green" style="text-align: center;">Person of Interest</h3>
+  <img src={{toSearch.imageUrl}} alt="Card image" class="person_image">
+  <div class="card-body">
+    <h5>Prospective Matches</h5>
+    <ul class="list-group list-group-horizontal" *ngFor='let person of toSearch.matchedPersons'>
+      <li class="list-group-item">
+        <div class="d-flex flex-column justify-content-center">
+          <img src={{person.imageUrl}} alt="Card image" class="matched_person_image">
+          <p>Name: {{person.identity}}</p>
+        </div> 
+      </li>
+    </ul>
+  </div>
+</div>

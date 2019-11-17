@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="row">
+  <div class="col-md-12" style="text-align:left">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron p-4" style="text-align: center;">
+          <h1 class="page_header">
+            {{ title }}
+          </h1>
+          <p class="lead" style="font-weight: bold;">Service for identifying persons from pictures across several National and International
+            databases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs" >
+      <li class="nav-item nav-style1" [routerLinkActive]="['active']">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['find']" (click)="findClicked()">Find</a>
+      </li>
+      <!-- <li class="nav-item nav-style-1" [routerLinkActive]="['active']">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['update']" (click)="updateClicked()">Update</a>
+      </li>
+      <li class="nav-item nav-style-1" [routerLinkActive]="['active']">
+        <a class="nav-link" data-toggle="tab" [routerLink]="['poisearch']" (click)="poisearchClicked()">POI Search</a>
+      </li> -->
+    </ul>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

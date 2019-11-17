@@ -1,0 +1,44 @@
+<div class="card mb-3">
+    <h3 class="card-header" style="text-align: center;">{{person.identity}}</h3>
+    <img src={{person.imageUrl}} alt="Card image" class="person_image">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" [class]="database_type">From Database: {{person.fromDatabase}}</li>
+      <li class="list-group-item">Match Type: {{person.matchType}}</li>
+      <li class="list-group-item">Crime Report No: {{person.crimeNo}}</li>
+      <li class="list-group-item">Last Known Address: {{person.address}}</li>
+    </ul>
+    <div class="card-body">
+      <a style="cursor: pointer" class="card-link">Learn More</a>
+    </div>
+    <div class="card-footer text-muted">      
+        <p>Image Match Confidence</p>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" [style.width.%]="person.matchPercentage" attr.aria-valuenow='{{person.matchPercentage}}' aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- <div class="card mb-3">
+  <h3 class="card-header">{{person.identity.firstName}} {{person.identity.lastName}}</h3>
+  <div class="card-body">
+    <h5 class="card-title">Aadhar: {{person.identity.uidai}}</h5>
+    <h6 class="card-subtitle text-muted">{{person.identity.pinCode}}</h6>
+  </div>
+  <img src={{person.imageUrl}} alt="Card image" class="person_image">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">DL: {{person.identity.dlNumber}}</li>
+    <li class="list-group-item">PAN: {{person.identity.panNumber}}</li>
+    <li class="list-group-item">Criminal Charges: {{criminalCharges}}</li>
+  </ul>
+  <div class="card-body">
+    <a style="cursor: pointer" class="card-link">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">      
+      <p>Image Match Confidence</p>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" [style.width.%]="person.matchPercentage" attr.aria-valuenow='{{person.matchPercentage}}' aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+  </div>
+</div> -->

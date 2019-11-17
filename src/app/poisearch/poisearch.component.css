@@ -1,0 +1,50 @@
+.special_background{
+    background-image: url("/assets/background2.jpg");
+    height: 100%;
+}
+
+.file-upload-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.display_panel{
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.uploader_visible, .result_visible{
+    display: block;
+}
+
+.uploader_invisible, .result_invisible{
+    display: none;
+}
+
+.loader_gif{
+    margin: auto;
+    max-height: 75px;
+    max-width: 75px;
+}
+/* .image_data{
+    max-width: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.image_data > img{
+    position: relative;
+    top: 20%;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.uploaded_data, .db_data{
+    text-align: center;
+} */
