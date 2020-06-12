@@ -26,65 +26,12 @@ export class PoisearchComponent implements OnInit {
   imgURL: any;
 
   public db_person : Person = null;
-  //  : Person = {
-  //   identity:{
-  //    firstName: 'Thor',
-  //    lastName: 'Odinson',
-  //    father: '',
-  //    mother: '',
-  //    dob: '',
-  //    nationality: 'Asgardian',
-  //    permanentAddress: 'Asgard',
-  //    contact: ['3333','4444'],
-  //    dlNumber: 'ABCDE123',
-  //    panNumber: 'ABXXC21',
-  //    uidai: '8898765678990',
-  //    passport: '',
-  //    ethnicity: 'Asgardian',
-  //    pinCode: ''
-  //   },
-  //   criminalCharges: [{
-  //     name: 'Destruction of property',
-  //     chargedBy: 'NYPD',
-  //     id: 0,
-  //     status: 'Judgement Pending',
-  //     date: '',
-  //     place: 'NY',
-  //     remarks: ''
-  //   }],
-  //   socialNetworkInfo: [
-  //     {
-  //       siteName: 'Facebook',
-  //       userProfileUrl:'facebook.com/sasmit'
-  //      },
-  //      {
-  //        siteName: 'Twitter',
-  //        userProfileUrl:'twitter.com/sasmit'
-  //       }
-  //   ],
-  //   medicalInfo: {
-  //     height: 198,
-  //     weight: 91,
-  //    bloodGroup: 'O+ve',
-  //    identificationMarks: '',
-  //    latestMedicalStatements: []
-  //   },
-  //   matchPercentage: 95,
-  //   imageUrl: 'assets/thor_db.jpg'
-  // };
 
   public uploaded_person : Unkown_Person = {
     imageUrl: '',
     matchedPersons : []
   }
 
-
-  // public toggleUploaderVisibility() {
-  //   if (this.uploaderVisibility == "uploader_visible")
-  //     this.uploaderVisibility = "uploader_invisible"
-  //   else
-  //     this.uploaderVisibility = "uploader_visible"
-  // }
 
   public preview(files) {
     if (files.length === 0)
